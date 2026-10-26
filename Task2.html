@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Care Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f2f8fa;
+            text-align: center;
+        }
+        header {
+            background: #087f8c;
+            color: white;
+            padding: 25px;
+        }
+        nav {
+            background: #064e59;
+            padding: 12px;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        nav a:hover { color: yellow; }
+        section {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 { color: #087f8c; }
+        input, select, button {
+            padding: 10px;
+            margin: 7px;
+            width: 80%;
+            max-width: 300px;
+        }
+        button {
+            background: #087f8c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover { background: #064e59; }
+        footer {
+            background: #064e59;
+            color: white;
+            padding: 15px;
+        }
+        @media (max-width: 600px) {
+            nav a { display: inline-block; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>City Care Hospital</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="#departments">Departments</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#appointment">Appointment</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="departments">
+    <h2>Our Departments</h2>
+    <p>Cardiology | Neurology | Orthopedics</p>
+    <p>Pediatrics | General Medicine</p>
+</section>
+
+<section id="doctors">
+    <h2>Our Doctors</h2>
+    <p>Dr. Ravi - Cardiologist</p>
+    <p>Dr. Priya - Pediatrician</p>
+    <p>Dr. Kumar - Orthopedic Specialist</p>
+</section>
+
+<section>
+    <h2>Specialties & Visiting Hours</h2>
+    <p>Expert consultation and patient care</p>
+    <p>Visiting Hours: 9 AM - 5 PM</p>
+</section>
+
+<section id="facilities">
+    <h2>Our Facilities</h2>
+    <p>Emergency Care | Laboratory</p>
+    <p>Pharmacy | Ambulance | ICU</p>
+</section>
+
+<section id="appointment">
+    <h2>Book an Appointment</h2>
+    <form>
+        <label for="name">Full Name</label><br>
+        <input id="name" type="text"
+               placeholder="Enter your name" required><br>
+
+        <label for="email">Email</label><br>
+        <input id="email" type="email"
+               placeholder="Enter your email" required><br>
+
+        <label for="department">Department</label><br>
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Pediatrics</option>
+        </select><br>
+
+        <label for="date">Appointment Date</label><br>
+        <input id="date" type="date" required><br>
+
+        <button type="submit">Request Appointment</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Emergency: 112 (India)</p>
+    <p>Phone: 9876543210</p>
+    <p>Email: citycare@example.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 City Care Hospital</p>
+</footer>
+
+</body>
+</html>
